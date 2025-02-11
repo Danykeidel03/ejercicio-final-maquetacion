@@ -7,6 +7,7 @@ body,
 html {
     margin: 0;
     padding: 0;
+    background-color: #DDD0C8;
 }
 
 h2,
@@ -21,11 +22,39 @@ em {
 
 /* Header */
 
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 25px 0 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 3;
+}
+
+.principal h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+}
+
+.header__nav-list .header__nav-item a {
+    color: #DDD0C8 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main {
+    margin-top: 60px;
 }
 
 /* Contenedor principal */
@@ -33,10 +62,53 @@ em {
     display: flex;
     width: 100%;
     max-width: 1710px;
-    margin: 20px auto 75px;
+    margin: 20px auto 45px;
     padding: 0 15px;
     height: auto;
     column-gap: 15px;
+}
+
+.slideMarcas .marcas {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transition: all 1s ease;
+    overflow: hidden;
+    gap: 50px;
+    background-color: black;
+}
+
+.slideMarcas .marcas>div {
+    display: flex;
+    animation: scrollText 50s infinite linear !important;
+    padding: 20px;
+}
+
+.slideMarcas .marcas>div img{
+    border-radius: 16px;
+}
+
+@-webkit-keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* Columnas */
@@ -109,25 +181,6 @@ em {
     font-size: 18px;
 }
 
-/* Animaciones */
-@keyframes entranceLeft {
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes entranceRightDown {
-    100% {
-        transform: translateX(0%);
-    }
-}
-
-@keyframes entranceRightUp {
-    100% {
-        transform: translateX(0%);
-    }
-}
-
 /* Animación de entrada de los bloques */
 .column-left .block {
     position: relative;
@@ -172,12 +225,6 @@ em {
     animation: shine 1s;
 }
 
-@keyframes shine {
-    100% {
-        left: 125%;
-    }
-}
-
 /* Imágenes */
 .imgtextLeft,
 .imgtextRight,
@@ -214,11 +261,6 @@ em {
 
 /* Media Queries (de menor a mayor resolución) */
 @media (max-width: 480px) {
-    .container.heroHome {
-        padding-top: 60px;
-        margin: 0 auto 60px;
-    }
-
     .column-left .block h2 {
         padding-left: 0;
     }
@@ -229,10 +271,6 @@ em {
 }
 
 @media (max-width: 670px) {
-    .container.heroHome {
-        margin: 40px auto 60px;
-    }
-
     .column-left .block .blockText {
         padding: 25px;
     }
