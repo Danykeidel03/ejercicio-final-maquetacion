@@ -34,7 +34,7 @@ em {
     z-index: 3;
 }
 
-.principal h1{
+.principal h1 {
     text-transform: uppercase;
     text-align: center;
     padding: 20px;
@@ -87,8 +87,13 @@ main {
     padding: 20px;
 }
 
-.slideMarcas .marcas>div img{
+.slideMarcas .marcas>div img:hover {
+    transform: rotateY(180deg);
+}
+
+.slideMarcas .marcas>div img {
     border-radius: 16px;
+    transition: transform 0.4s;
 }
 
 @-webkit-keyframes scrollText {
@@ -109,6 +114,55 @@ main {
     to {
         transform: translateX(-100%);
     }
+}
+
+.divProductos {
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.divProductos .imgProducto img {
+    border-radius: 16px;
+}
+
+.divProductos .detallesProducto>div {
+    font-size: 45px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.divProductos .detallesProducto>div:hover {
+    cursor: pointer;
+}
+
+.divProductos .detallesProducto>div:first-child:hover {
+    color: red;
+}
+
+.divProductos .detallesProducto>div:last-child:hover {
+    color: blue;
+}
+
+.divProductos .detallesProducto>div:nth-child(3):hover {
+    color: yellow;
+}
+
+.divProductos .detallesProducto>div:nth-child(2):hover {
+    color: green;
+}
+
+/* Footer */
+
+footer {
+    background: #000;
+    color: #DDD0C8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Columnas */
