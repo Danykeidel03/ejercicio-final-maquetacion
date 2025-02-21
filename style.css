@@ -345,6 +345,9 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Columnas */

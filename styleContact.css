@@ -1,24 +1,89 @@
-@media (max-width: 480px) {
-    .div-contact {
-        padding: 24px 24px 12px 24px;
-    }
+.columns{
+    display: flex;
+    justify-content: center;
+}
 
-    .div-contact h1 {
-        text-align: center;
-        font-family: sans-serif;
-    }
+.column-main{
+    max-width: 1280px;
+}
 
+.div-contact {
+    padding: 24px 24px 12px 24px;
+}
+
+.div-contact h1 {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+main {
+    margin-top: 106px;
+}
+
+.form-contacto{
+    padding: 64px;
+    background-color: white;
+    margin: 12px 24px 24px 24px;
+    border: 1px solid black;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContacto{
+    height: 400px;
+}
+
+.form-contacto img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-contacto form input,
+.form-contacto form select,
+.form-contacto form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 6px 0 6px 0;
+}
+
+.labelNewsletter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelNewsletter input{
+    width: 60%;
+}
+.labelNewsletter span{
+    width: 40%;
+}
+
+#reason,
+.enviar{
+    background-color: black;
+    color: #DDD0C8;
+}
+
+@media (max-width: 1000px) and (min-width:651px) {
     .form-contacto{
-        padding: 24px;
-        background-color: white;
-        margin: 12px 24px 24px 24px;
-        border: 1px solid black;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
         gap: 20px;
-        justify-content: center;
-        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .form-contacto{
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
     }
 
     .form-contacto img{
@@ -27,38 +92,4 @@
         width: auto;
         object-fit: cover;
     }
-
-    .form-contacto form input,
-    .form-contacto form select,
-    .form-contacto form textarea{
-        width: 100%;
-        padding: 12px;
-        border: 1px solid black;
-        border-radius: 4px;
-        margin: 6px 0 6px 0;
-    }
-
-    .labelNewsletter{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .labelNewsletter input{
-        width: 60%;
-    }
-    .labelNewsletter span{
-        width: 40%;
-    }
-
-    #reason,
-    .enviar{
-        background-color: black;
-        color: #DDD0C8;
-    }
-}
-
-main {
-    margin-top: 106px;
 }
