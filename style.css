@@ -20,164 +20,6 @@ em {
     font-family: sans-serif;
 }
 
-
-
-@media (max-width: 670px) {
-    .column-left .block .blockText {
-        padding: 25px;
-    }
-
-    .column-left .block h2 {
-        font-size: 32px;
-        padding-left: 85px;
-    }
-
-    .column-left .block p {
-        font-size: 15px;
-        line-height: 18px;
-    }
-}
-
-@media (max-width: 799px) {
-    .column-right {
-        flex-direction: column;
-    }
-
-    .container.heroHome {
-        height: auto;
-    }
-
-    .column-right .blockText {
-        padding: 25px 0;
-    }
-
-    .column-left .block .blockText {
-        aspect-ratio: 1/1;
-    }
-}
-
-@media (max-width: 991px) {
-    .container.heroHome {
-        display: block;
-    }
-
-    .column-left,
-    .column-right {
-        width: 100%;
-    }
-
-    .column-right {
-        flex-direction: row;
-    }
-
-    .column-left .block .blockText {
-        position: relative;
-        padding: 50px;
-    }
-
-    .column-left {
-        padding: 20px 0 10px;
-    }
-
-    .column-right {
-        padding: 10px 0 20px;
-    }
-
-    .column-right .blockText {
-        padding: 50px 0;
-    }
-
-    .column-right .block.up,
-    .column-right .block.down {
-        padding: 0 25px;
-    }
-
-    .column-left .block h2 {
-        width: 100%;
-        padding-left: 110px;
-    }
-}
-
-@media (max-width: 1100px) and (min-width: 992px) {
-    .column-left .block h2 {
-        font-size: 35px;
-    }
-}
-
-@media (max-height: 1000px) {
-    .container.heroHome {
-        height: auto;
-    }
-}
-
-@media (max-width: 991px) and (max-height: 1000px) {
-    .column.main .container.heroHome {
-        height: auto;
-    }
-}
-
-/* Media Queries (de menor a mayor resolución) */
-@media (max-width: 767px) {
-    .column-left .block h2 {
-        padding-left: 0;
-    }
-
-    .column-left .block .blockText .brand {
-        position: static;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .divContacto {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer .divTrabajaConNosotros {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
-
-    footer .divTrabajaConNosotros a:hover {
-        cursor: pointer;
-    }
-
-    .divProductos {
-        flex-direction: column;
-    }
-
-    .divProductos .detallesProducto {
-        text-align: center;
-    }
-
-    .header__nav {
-        display: none;
-    }
-
-    .header__nav.mobile {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-    .bi.bi-three-dots-vertical {
-        font-size: 35px;
-        color: white;
-    }
-
-    .header__nav {
-        width: initial !important;
-    }
-}
-
 /* Header */
 
 
@@ -509,7 +351,7 @@ newsletter
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: lightgray;
+    background-image: url("bckgr.webp");
 }
 
 .newsletter form {
@@ -537,4 +379,168 @@ newsletter
     border: 1px solid black;
     border-radius: 4px;
     margin: 6px 0 6px 0;
+}
+
+
+.newsletter form input:last-child:hover {
+    color: black;
+    background-color:#DDD0C8;
+    cursor: pointer;
+}
+
+
+@media (max-width: 670px) {
+    .column-left .block .blockText {
+        padding: 25px;
+    }
+
+    .column-left .block h2 {
+        font-size: 32px;
+        padding-left: 85px;
+    }
+
+    .column-left .block p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 799px) {
+    .column-right {
+        flex-direction: column;
+    }
+
+    .container.heroHome {
+        height: auto;
+    }
+
+    .column-right .blockText {
+        padding: 25px 0;
+    }
+
+    .column-left .block .blockText {
+        aspect-ratio: 1/1;
+    }
+}
+
+@media (max-width: 991px) {
+    .container.heroHome {
+        display: block;
+    }
+
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+
+    .column-right {
+        flex-direction: row;
+    }
+
+    .column-left .block .blockText {
+        position: relative;
+        padding: 50px;
+    }
+
+    .column-left {
+        padding: 20px 0 10px;
+    }
+
+    .column-right {
+        padding: 10px 0 20px;
+    }
+
+    .column-right .blockText {
+        padding: 50px 0;
+    }
+
+    .column-right .block.up,
+    .column-right .block.down {
+        padding: 0 25px;
+    }
+
+    .column-left .block h2 {
+        width: 100%;
+        padding-left: 110px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 992px) {
+    .column-left .block h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-height: 1000px) {
+    .container.heroHome {
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) and (max-height: 1000px) {
+    .column.main .container.heroHome {
+        height: auto;
+    }
+}
+
+/* Media Queries (de menor a mayor resolución) */
+@media (max-width: 767px) {
+    .column-left .block h2 {
+        padding-left: 0;
+    }
+
+    .column-left .block .blockText .brand {
+        position: static;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .divContacto {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .divTrabajaConNosotros {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer .divTrabajaConNosotros a:hover {
+        cursor: pointer;
+    }
+
+    .divProductos {
+        flex-direction: column;
+    }
+
+    .divProductos .detallesProducto {
+        text-align: center;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .header__nav.mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .bi.bi-three-dots-vertical {
+        font-size: 35px;
+        color: white;
+    }
+
+    .header__nav {
+        width: initial !important;
+    }
 }
