@@ -4,11 +4,16 @@
 }
 
 .column-main{
-    max-width: 1280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .div-contact {
     padding: 24px 24px 12px 24px;
+    max-width: 1280px;
 }
 
 .div-contact h1 {
@@ -21,6 +26,7 @@ main {
 }
 
 .form-contacto{
+    max-width: 1280px;
     padding: 64px;
     background-color: white;
     margin: 12px 24px 24px 24px;
