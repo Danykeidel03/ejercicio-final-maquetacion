@@ -78,8 +78,28 @@ footer .divTrabajaConNosotros {
 }
 
 main {
-    margin-top: 60px;
+    margin-top: 105px;
 }
+
+.header__checkbox:checked~.header__nav {
+    display: block;
+}
+
+.header__checkbox {
+    display: none;
+}
+
+.header__checkbox:checked ~ .header__nav ul {
+    position: absolute;
+    right: 0;
+    top: 106px;
+    background-color: black;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
 
 /* Contenedor principal */
 .container.heroHome {
@@ -384,7 +404,7 @@ newsletter
 
 .newsletter form input:last-child:hover {
     color: black;
-    background-color:#DDD0C8;
+    background-color: #DDD0C8;
     cursor: pointer;
 }
 
