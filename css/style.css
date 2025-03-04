@@ -360,6 +360,15 @@ footer {
     text-align: right;
 }
 
+@keyframes zoom {
+    0%, 100%{transform: scale(1);}
+    50%{transform: scale(1.05);}
+}
+
+.imgProducto{
+    animation: zoom 2s infinite alternate ease-in-out;
+}
+
 /*
 newsletter
 */
@@ -371,7 +380,7 @@ newsletter
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url("images/bckgr.webp");
+    background-image: url("../images/bckgr.webp");
 }
 
 .newsletter form {
