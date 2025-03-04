@@ -89,7 +89,7 @@ main {
     display: none;
 }
 
-.header__checkbox:checked ~ .header__nav ul {
+.header__checkbox:checked~.header__nav ul {
     position: absolute;
     right: 0;
     top: 106px;
@@ -99,7 +99,7 @@ main {
     justify-content: center;
     align-items: center;
     padding: 40px;
-  }
+}
 
 /* Contenedor principal */
 .container.heroHome {
@@ -361,11 +361,18 @@ footer {
 }
 
 @keyframes zoom {
-    0%, 100%{transform: scale(1);}
-    50%{transform: scale(1.05);}
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
-.imgProducto{
+.imgProducto {
     animation: zoom 2s infinite alternate ease-in-out;
 }
 
@@ -380,7 +387,7 @@ newsletter
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url("../images/bckgr.webp");
+    background: linear-gradient(to top, rgba(255, 255, 255, 1.4), rgba(255, 255, 255, 0)), url("../images/bckgr.webp");
 }
 
 .newsletter form {
