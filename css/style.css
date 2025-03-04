@@ -371,7 +371,7 @@ newsletter
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: url("bckgr.webp");
+    background-image: url("images/bckgr.webp");
 }
 
 .newsletter form {
